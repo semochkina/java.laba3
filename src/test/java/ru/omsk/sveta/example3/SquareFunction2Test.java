@@ -1,5 +1,8 @@
+package ru.omsk.sveta.example3;
+
 import org.junit.Assert;
 import org.junit.Test;
+import ru.omsk.sveta.example2.SquareFunction;
 
 public class SquareFunction2Test {
     @Test
