@@ -9,10 +9,10 @@ public class SquareFunction2 {
         this.squareFunction = squareFunction;
     }
 
-    public double maxValue() {
+    public double maxValue() throws SquareEqException {
         double[] values = squareFunction.calculation();
         if (values.length == 0) {
-            throw new RuntimeException("корней нет");
+            throw new SquareEqException();
         }
         return values[0] > values[1] ? values[0] : values[1];
     }
